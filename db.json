@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "RD1lHmNV",
+      "userName": "admin",
+      "password": "1234",
+      "userMail": "city-directory@mail.ru"
+    },
+    {
+      "id": "QTwtBcKHF",
+      "userName": "Костя",
+      "password": "1111",
+      "userMail": ""
+    },
+    {
+      "id": "4fwOx0jBP",
+      "userName": "Konstantin",
+      "password": "1111",
+      "userMail": "mail@mail.com"
+    },
+    {
+      "id": "qKaMBQyUK",
+      "userName": "Konstantin",
+      "password": "1111",
+      "userMail": "mail@mail.com"
+    }
+  ]
+}
