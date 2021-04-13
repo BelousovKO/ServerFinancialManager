@@ -19,6 +19,9 @@ router.get('/sendTo/:userMail', usersController.sendMail);
 // POST /users/m
 router.post('/m', usersController.createUserM);
 
+// POST /users/login
+router.post('/login', usersController.logInUser);
+
 // DELETE /users/:id
 router.delete('/:id', usersController.deleteUser);
 
