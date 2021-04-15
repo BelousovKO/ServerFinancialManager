@@ -10,11 +10,11 @@ router.get('/', usersController.getUsers);
 // GET /users/:userName
 router.get('/:userName', usersController.getUser);
 
-// GET /users/pasEmail/:userMail
-router.get('/pasEmail/:userMail', usersController.getPasEmail);
+// GET /users/pasEmail/:email
+router.get('/pasEmail/:email', usersController.getPasEmail);
 
-// GET /users/sendTo/:userMail
-router.get('/sendTo/:userMail', usersController.sendMail);
+// GET /users/sendTo/:email
+router.get('/sendTo/:email', usersController.sendMail);
 
 // POST /users/m
 router.post('/m', usersController.createUserM);

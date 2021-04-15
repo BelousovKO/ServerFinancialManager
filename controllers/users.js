@@ -35,11 +35,11 @@ const getUser = (req, res, next) => {
 };
 
 const getPasEmail = (req, res, next) => {
-  const { userMail } = req.params;
+  const { email } = req.params;
 
   const user = db
     .get('users')
-    .find({ userMail })
+    .find({ email })
     .value();
 
   if (!user) {
@@ -58,9 +58,9 @@ const createUserM = (req, res, next) => {
     properties: {
       userName: { type: 'string' },
       password: { type: 'string' },
-      userMail: { type: 'string' }
+      email: { type: 'string' }
     },
-    required: ['userName', 'password', 'userMail'],
+    required: ['userName', 'password', 'email'],
     additionalProperties: true
   };
 
@@ -69,12 +69,12 @@ const createUserM = (req, res, next) => {
     throw new Error('INVALID_JSON_OR_API_FORMAT');
   }
 
-  const { userName, password, userMail } = req.body;
+  const { userName, password, email } = req.body;
   const user = {
     id: shortid.generate(),
     userName,
     password,
-    userMail
+    email
   };
 
   try {
@@ -86,8 +86,7 @@ const createUserM = (req, res, next) => {
   }
 
   res.json({
-    status: 'OK',
-    data: user
+    status: 'OK'
   });
 };
 
@@ -155,11 +154,11 @@ const transporter = nodemailer.createTransport(
 );
 
 const sendMail = (req, res, next) => {
-  const { userMail } = req.params;
+  const { email } = req.params;
 
   const user = db
     .get('users')
-    .find({ userMail })
+    .find({ email })
     .value();
 
   if (!user) {
@@ -167,7 +166,7 @@ const sendMail = (req, res, next) => {
   }
 
   const message = {
-    to: user.userMail,
+    to: user.email,
     subject: 'Отправляем данные вашей учетной записи',
     html: `<h2>Данные вашей учетной записи</h2>
       <ul>

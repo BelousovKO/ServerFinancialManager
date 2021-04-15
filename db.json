@@ -4,25 +4,13 @@
       "id": "RD1lHmNV",
       "userName": "admin",
       "password": "1234",
-      "userMail": "city-directory@mail.ru"
-    },
-    {
-      "id": "QTwtBcKHF",
-      "userName": "Костя",
-      "password": "1111",
-      "userMail": ""
+      "email": "city-directory@mail.ru"
     },
     {
       "id": "4fwOx0jBP",
       "userName": "Konstantin",
       "password": "1111",
-      "userMail": "mail@mail.com"
-    },
-    {
-      "id": "qKaMBQyUK",
-      "userName": "Konstantin",
-      "password": "1111",
-      "userMail": "mail@mail.com"
+      "email": "mail@mail.com"
     }
   ]
 }
