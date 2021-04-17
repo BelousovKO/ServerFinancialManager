@@ -3,20 +3,7 @@ const { validate } = require('jsonschema');
 const nodemailer = require('nodemailer');
 const db = require('../db/db');
 
-const getUsers = (req, res, next) => {
-  let users = [];
-  try {
-    users = db.get('users');
-  } catch (error) {
-    throw new Error(error);
-  }
-  res.json({
-    status: 'OK',
-    data: users
-  });
-};
-
-const getUser = (req, res, next) => {
+const checkUserName = (req, res, next) => {
   const { userName } = req.params;
 
   const user = db
@@ -25,13 +12,15 @@ const getUser = (req, res, next) => {
     .value();
 
   if (!user) {
-    throw new Error('USER_NOT_FOUND');
+    res.json({
+      status: 'OK',
+      data: user
+    });
+  } else {
+    res.json({
+      status: 'CANCEL'
+    });
   }
-
-  res.json({
-    status: 'OK',
-    data: user
-  });
 };
 
 const getPasEmail = (req, res, next) => {
@@ -52,7 +41,7 @@ const getPasEmail = (req, res, next) => {
   });
 };
 
-const createUserM = (req, res, next) => {
+const userReg = (req, res, next) => {
   const userSchema = {
     type: 'object',
     properties: {
@@ -115,27 +104,13 @@ const logInUser = (req, res, next) => {
 
   if (user) {
     if (user.userName === userName && user.password === password) {
-      res.json({
-        status: 'OK'
-      });
+      res.json({ status: 'OK' });
     } else {
-      res.json({
-        status: 'FALSE'
-      });
+      res.json({ status: 'FALSE' });
     }
   } else {
-    res.json({
-      status: 'ERROR'
-    });
+    res.json({ status: 'ERROR' });
   }
-};
-
-const deleteUser = (req, res, next) => {
-  db.get('users')
-    .remove({ id: req.params.id })
-    .write();
-
-  res.json({ status: 'OK' });
 };
 
 const transporter = nodemailer.createTransport(
@@ -186,11 +161,9 @@ const sendMail = (req, res, next) => {
 };
 
 module.exports = {
-  getUsers,
-  getUser,
+  checkUserName,
   getPasEmail,
-  createUserM,
-  deleteUser,
+  userReg,
   sendMail,
   logInUser
 };
