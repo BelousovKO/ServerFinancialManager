@@ -1,16 +1,16 @@
 {
   "users": [
     {
-      "id": "RD1lHmNV",
+      "id": "YnkOFLIcR",
       "userName": "admin",
-      "password": "1234",
+      "hashPassword": "$2a$07$1eBeJvsB81ZFoTNVOnxftOjTqCzVOGFRSOW.rU2rE3FKr/MBvlMlS",
       "email": "city-directory@mail.ru"
     },
     {
-      "id": "4fwOx0jBP",
-      "userName": "Konstantin",
-      "password": "1111",
-      "email": "mail@mail.com"
+      "id": "QOn7V5hR5",
+      "userName": "Kostya",
+      "hashPassword": "$2a$07$HTXoI3cIG.mhhZm2N9S55emihJ2kvfIDOaxNrXzoq3nAxu.Go62IC",
+      "email": "raider0540@gmail.com"
     }
   ]
 }

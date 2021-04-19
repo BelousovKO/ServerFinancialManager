@@ -1,7 +1,19 @@
 const shortid = require('shortid');
 const { validate } = require('jsonschema');
 const nodemailer = require('nodemailer');
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
+
 const db = require('../db/db');
+
+const generateAccessToken = (username, hashPassword) => {
+  const payload = {
+    username,
+    hashPassword,
+  };
+  const secret = 'secret_kye';
+  return jwt.sign(payload, secret, { expiresIn: '6h' });
+};
 
 const checkUserName = (req, res, next) => {
   const { userName } = req.params;
@@ -59,10 +71,11 @@ const userReg = (req, res, next) => {
   }
 
   const { userName, password, email } = req.body;
+  const hashPassword = bcrypt.hashSync(password, 7);
   const user = {
     id: shortid.generate(),
     userName,
-    password,
+    hashPassword,
     email
   };
 
@@ -102,15 +115,18 @@ const logInUser = (req, res, next) => {
     .find({ userName })
     .value();
 
-  if (user) {
-    if (user.userName === userName && user.password === password) {
-      res.json({ status: 'OK' });
-    } else {
-      res.json({ status: 'FALSE' });
-    }
-  } else {
-    res.json({ status: 'ERROR' });
+  if (!user) {
+    return res.json({ status: 'ERROR' });
   }
+  if (user.userName === userName && bcrypt.compareSync(password, user.hashPassword)) {
+    const token = generateAccessToken(user.userName, user.hashPassword);
+
+    return res.json({
+      status: 'OK',
+      token,
+    });
+  }
+  return res.json({ status: 'FALSE' });
 };
 
 const transporter = nodemailer.createTransport(
