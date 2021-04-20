@@ -6,12 +6,13 @@ const bcrypt = require('bcryptjs');
 
 const db = require('../db/db');
 
-const generateAccessToken = (username, hashPassword) => {
+const secret = '1siRnaYfI';
+
+const generateAccessToken = (userName, hashPassword) => {
   const payload = {
-    username,
+    userName,
     hashPassword,
   };
-  const secret = 'secret_kye';
   return jwt.sign(payload, secret, { expiresIn: '6h' });
 };
 
@@ -79,6 +80,8 @@ const userReg = (req, res, next) => {
     email
   };
 
+  const token = generateAccessToken(user.userName, user.hashPassword);
+
   try {
     db.get('users')
       .push(user)
@@ -88,7 +91,8 @@ const userReg = (req, res, next) => {
   }
 
   res.json({
-    status: 'OK'
+    status: 'OK',
+    token
   });
 };
 
@@ -121,9 +125,48 @@ const logInUser = (req, res, next) => {
   if (user.userName === userName && bcrypt.compareSync(password, user.hashPassword)) {
     const token = generateAccessToken(user.userName, user.hashPassword);
 
+    const { ip } = req;
+
     return res.json({
       status: 'OK',
       token,
+      ip
+    });
+  }
+  return res.json({ status: 'FALSE' });
+};
+
+const authUser = (req, res, next) => {
+  const userSchema = {
+    type: 'object',
+    properties: {
+      token: { type: 'string' }
+    },
+    required: ['token'],
+    additionalProperties: false
+  };
+
+  const validationResult = validate(req.body, userSchema);
+  if (!validationResult.valid) {
+    throw new Error('INVALID_JSON_OR_API_FORMAT');
+  }
+
+  const payload = jwt.verify(req.body.token, secret);
+
+  const { userName, hashPassword } = payload;
+
+  const user = db
+    .get('users')
+    .find({ userName })
+    .value();
+
+  if (!user) {
+    return res.json({ status: 'ERROR' });
+  }
+  if (user.userName === userName && hashPassword === user.hashPassword) {
+    return res.json({
+      status: 'OK',
+      data: user.userName
     });
   }
   return res.json({ status: 'FALSE' });
@@ -181,5 +224,6 @@ module.exports = {
   getPasEmail,
   userReg,
   sendMail,
-  logInUser
+  logInUser,
+  authUser
 };

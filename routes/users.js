@@ -19,4 +19,7 @@ router.post('/m', usersController.userReg);
 // POST /users/login
 router.post('/login', usersController.logInUser);
 
+// POST /users/auth
+router.post('/auth', usersController.authUser);
+
 module.exports = router;
