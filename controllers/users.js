@@ -8,10 +8,11 @@ const db = require('../db/db');
 
 const secret = '1siRnaYfI';
 
-const generateAccessToken = (userName, hashPassword) => {
+const generateAccessToken = (userName, hashPassword, checkToken) => {
   const payload = {
     userName,
     hashPassword,
+    checkToken,
   };
   return jwt.sign(payload, secret, { expiresIn: '6h' });
 };
@@ -73,6 +74,7 @@ const userReg = (req, res, next) => {
 
   const { userName, password, email } = req.body;
   const hashPassword = bcrypt.hashSync(password, 7);
+  const checkToken = req.ip;
   const user = {
     id: shortid.generate(),
     userName,
@@ -80,7 +82,7 @@ const userReg = (req, res, next) => {
     email
   };
 
-  const token = generateAccessToken(user.userName, user.hashPassword);
+  const token = generateAccessToken(user.userName, user.hashPassword, checkToken);
 
   try {
     db.get('users')
@@ -113,6 +115,7 @@ const logInUser = (req, res, next) => {
   }
 
   const { userName, password } = req.body;
+  const checkToken = req.ip;
 
   const user = db
     .get('users')
@@ -122,15 +125,13 @@ const logInUser = (req, res, next) => {
   if (!user) {
     return res.json({ status: 'ERROR' });
   }
-  if (user.userName === userName && bcrypt.compareSync(password, user.hashPassword)) {
-    const token = generateAccessToken(user.userName, user.hashPassword);
 
-    const { ip } = req;
+  if (user.userName === userName && bcrypt.compareSync(password, user.hashPassword)) {
+    const token = generateAccessToken(user.userName, user.hashPassword, checkToken);
 
     return res.json({
       status: 'OK',
-      token,
-      ip
+      token
     });
   }
   return res.json({ status: 'FALSE' });
@@ -153,14 +154,14 @@ const authUser = (req, res, next) => {
 
   const payload = jwt.verify(req.body.token, secret);
 
-  const { userName, hashPassword } = payload;
+  const { userName, hashPassword, checkToken } = payload;
 
   const user = db
     .get('users')
     .find({ userName })
     .value();
 
-  if (!user) {
+  if (!user || checkToken !== req.ip) {
     return res.json({ status: 'ERROR' });
   }
   if (user.userName === userName && hashPassword === user.hashPassword) {
@@ -178,12 +179,12 @@ const transporter = nodemailer.createTransport(
     port: '465',
     secure: true,
     auth: {
-      user: 'city-directory@mail.ru',
-      pass: 'newfocusstart2021',
+      user: 'financial-manager-angular@mail.ru',
+      pass: 'CdWqYU6E([*wVGm',
     }
   },
   {
-    from: 'City directory <city-directory@mail.ru>',
+    from: 'Financial manager <financial-manager-angular@mail.ru>',
   }
 );
 
@@ -199,13 +200,23 @@ const sendMail = (req, res, next) => {
     throw new Error('USER_NOT_FOUND');
   }
 
+  const password = shortid.generate().toLowerCase();
+  user.hashPassword = bcrypt.hashSync(password, 7);
+
+  db.get('users')
+    .find({ email })
+    .assign(user)
+    .value();
+
+  db.write();
+
   const message = {
     to: user.email,
-    subject: 'Отправляем данные вашей учетной записи',
+    subject: 'Отправляем данные вашей учетной записи с новым паролем',
     html: `<h2>Данные вашей учетной записи</h2>
       <ul>
       <li>логин: <i>${user.userName}</i></li>
-      <li>пароль: <i>${user.password}</i></li>
+      <li>новый пароль: <i>${password}</i></li>
       </ul>`
   };
   transporter.sendMail(message, (err, info) => {
@@ -215,7 +226,6 @@ const sendMail = (req, res, next) => {
 
   res.json({
     status: 'OK',
-    data: user
   });
 };
 

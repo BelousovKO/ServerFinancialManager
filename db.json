@@ -9,8 +9,14 @@
     {
       "id": "QOn7V5hR5",
       "userName": "Kostya",
-      "hashPassword": "$2a$07$HTXoI3cIG.mhhZm2N9S55emihJ2kvfIDOaxNrXzoq3nAxu.Go62IC",
+      "hashPassword": "$2a$07$7Di545mOG/UOa3pJfHySRe3SFr9Vy.xiAmupUESMq1DjTOTTuXiXO",
       "email": "raider0540@gmail.com"
+    },
+    {
+      "id": "DYqU9fPSX",
+      "userName": "gggg",
+      "hashPassword": "$2a$07$oY58iiKcw4lecJWmrOX9SOk/ww78ELH6hHZbADrzadPh/3ljWdfxq",
+      "email": "g@g"
     }
   ]
 }
