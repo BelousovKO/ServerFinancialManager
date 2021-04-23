@@ -73,13 +73,14 @@ const userReg = (req, res, next) => {
   }
 
   const { userName, password, email } = req.body;
-  const hashPassword = bcrypt.hashSync(password, 7);
+  const tempEmail = email.toLowerCase();
+  const hashPassword = bcrypt.hashSync(password.toLowerCase(), 7);
   const checkToken = req.ip;
   const user = {
     id: shortid.generate(),
     userName,
     hashPassword,
-    email
+    tempEmail
   };
 
   const token = generateAccessToken(user.userName, user.hashPassword, checkToken);
