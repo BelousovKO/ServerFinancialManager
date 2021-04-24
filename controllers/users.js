@@ -26,18 +26,34 @@ const checkUserName = (req, res, next) => {
     .value();
 
   if (!user) {
-    res.json({
-      status: 'OK',
-      data: user
-    });
-  } else {
-    res.json({
-      status: 'CANCEL'
+    return res.json({
+      status: 'OK'
     });
   }
+  return res.json({
+    status: 'CANCEL'
+  });
 };
 
-const getPasEmail = (req, res, next) => {
+const checkMail = (req, res, next) => {
+  const { email } = req.params;
+
+  const user = db
+    .get('users')
+    .find({ email })
+    .value();
+
+  if (!user) {
+    return res.json({
+      status: 'OK'
+    });
+  }
+  return res.json({
+    status: 'CANCEL'
+  });
+};
+
+/* const getPasEmail = (req, res, next) => {
   const { email } = req.params;
 
   const user = db
@@ -53,7 +69,7 @@ const getPasEmail = (req, res, next) => {
     status: 'OK',
     data: user
   });
-};
+}; */
 
 const userReg = (req, res, next) => {
   const userSchema = {
@@ -80,7 +96,7 @@ const userReg = (req, res, next) => {
     id: shortid.generate(),
     userName,
     hashPassword,
-    tempEmail
+    email: tempEmail
   };
 
   const token = generateAccessToken(user.userName, user.hashPassword, checkToken);
@@ -181,7 +197,7 @@ const transporter = nodemailer.createTransport(
     secure: true,
     auth: {
       user: 'financial-manager-angular@mail.ru',
-      pass: 'CdWqYU6E([*wVGm',
+      pass: 'CdWqYU6E([*wVGm2',
     }
   },
   {
@@ -190,22 +206,30 @@ const transporter = nodemailer.createTransport(
 );
 
 const sendMail = (req, res, next) => {
-  const { email } = req.params;
+  const { value } = req.params;
 
-  const user = db
+  let user = db
     .get('users')
-    .find({ email })
+    .find({ userName: value })
     .value();
 
   if (!user) {
-    throw new Error('USER_NOT_FOUND');
+    user = db
+      .get('users')
+      .find({ email: value })
+      .value();
+
+    if (!user) {
+      throw new Error('USER_NOT_FOUND');
+    }
   }
 
-  const password = shortid.generate().toLowerCase();
+  const password = shortid.generate()
+    .toLowerCase();
   user.hashPassword = bcrypt.hashSync(password, 7);
 
   db.get('users')
-    .find({ email })
+    .find({ email: user.email })
     .assign(user)
     .value();
 
@@ -232,7 +256,8 @@ const sendMail = (req, res, next) => {
 
 module.exports = {
   checkUserName,
-  getPasEmail,
+  checkMail, /*
+  getPasEmail, */
   userReg,
   sendMail,
   logInUser,
