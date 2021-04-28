@@ -19,7 +19,10 @@ app.use('/users', usersRoutes);
 // Error handling
 app.use((err, req, res, next) => {
   const { message } = err;
-  res.json({ status: 'ERROR', message });
+  res.json({
+    status: 'ERROR',
+    message
+  });
 });
 
 app.listen(8080);

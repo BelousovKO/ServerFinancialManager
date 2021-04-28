@@ -9,9 +9,6 @@ router.get('/:userName', usersController.checkUserName);
 
 // GET /users/checkMail/:email
 router.get('/checkMail/:email', usersController.checkMail);
-/*
-// GET /users/pasEmail/:email
-router.get('/pasEmail/:email', usersController.getPasEmail); */
 
 // GET /users/sendTo/:value
 router.get('/sendTo/:value', usersController.sendMail);

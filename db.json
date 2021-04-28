@@ -18,5 +18,184 @@
       "hashPassword": "$2a$07$2smyrKql058jE2RtiafDGeSLnOTSkRmvA4GgfY3K5rCStUzarSJsy",
       "email": "a@a.a"
     }
+  ],
+  "userData": [
+    {
+      "userId": "1_WtaVqQn",
+      "interface": {
+        "expenseCategory0": {
+          "title": "Продукты",
+          "color": "#ce4b99",
+          "icon": ""
+        },
+        "expenseCategory1": {
+          "title": "Кафе",
+          "color": "#b1c94e",
+          "icon": ""
+        },
+        "expenseCategory2": {
+          "title": "Досуг",
+          "color": "#563227",
+          "icon": ""
+        },
+        "expenseCategory3": {
+          "title": "Транспорт",
+          "color": "#cf7e1a",
+          "icon": ""
+        },
+        "expenseCategory4": {
+          "title": "Здоровье",
+          "color": "#601480",
+          "icon": ""
+        },
+        "expenseCategory5": {
+          "title": "Подарки",
+          "color": "#377bbc",
+          "icon": ""
+        },
+        "expenseCategory6": {
+          "title": "Семья",
+          "color": "#A50606",
+          "icon": ""
+        },
+        "expenseCategory7": {
+          "title": "Покупки",
+          "color": "#138539",
+          "icon": ""
+        },
+        "expenseCategory8": {
+          "title": "",
+          "color": "#00B7C6",
+          "icon": ""
+        },
+        "expenseCategory9": {
+          "title": "",
+          "color": "#EA09B9",
+          "icon": ""
+        },
+        "expenseCategory10": {
+          "title": "",
+          "color": "#d0db00",
+          "icon": ""
+        },
+        "expenseCategory11": {
+          "title": "",
+          "color": "#09EA9B",
+          "icon": ""
+        },
+        "incomeCategory0": {
+          "title": "Зарплата",
+          "color": "#ce4b99",
+          "icon": ""
+        },
+        "incomeCategory1": {
+          "title": "Вклады",
+          "color": "#b1c94e",
+          "icon": ""
+        },
+        "incomeCategory2": {
+          "title": "",
+          "color": "#563227",
+          "icon": ""
+        },
+        "incomeCategory3": {
+          "title": "",
+          "color": "#cf7e1a",
+          "icon": ""
+        },
+        "incomeCategory4": {
+          "title": "",
+          "color": "#601480",
+          "icon": ""
+        },
+        "incomeCategory5": {
+          "title": "",
+          "color": "#377bbc",
+          "icon": ""
+        }
+      },
+      "costs": [
+        {
+          "title": "Хлеб",
+          "date": "2021-04-28T14:10:12.722Z",
+          "category": 0,
+          "amount": 1
+        },
+        {
+          "title": "Молоко",
+          "date": "2021-04-28T14:11:12.722Z",
+          "category": 1,
+          "amount": 2
+        },
+        {
+          "title": "Чай",
+          "date": "2021-04-28T14:12:12.722Z",
+          "category": 2,
+          "amount": 1
+        },
+        {
+          "title": "Кофе",
+          "date": "2021-04-28T14:13:12.722Z",
+          "category": 3,
+          "amount": 2
+        },
+        {
+          "title": "Сахар",
+          "date": "2021-04-28T14:14:12.722Z",
+          "category": 4,
+          "amount": 1
+        },
+        {
+          "title": "Сметана",
+          "date": "2021-04-28T14:15:12.722Z",
+          "category": 5,
+          "amount": 2
+        },
+        {
+          "title": "Мука",
+          "date": "2021-04-28T14:16:12.722Z",
+          "category": 6,
+          "amount": 1
+        },
+        {
+          "title": "Творог",
+          "date": "2021-04-28T14:17:12.722Z",
+          "category": 7,
+          "amount": 2
+        },
+        {
+          "title": "Джем",
+          "date": "2021-04-28T14:18:12.722Z",
+          "category": 8,
+          "amount": 1
+        },
+        {
+          "title": "Шоколад",
+          "date": "2021-04-28T14:19:12.722Z",
+          "category": 9,
+          "amount": 2
+        },
+        {
+          "title": "",
+          "date": "2021-04-28T14:20:12.722Z",
+          "category": 10,
+          "amount": 1
+        }
+      ],
+      "income": [
+        {
+          "title": "ЗП",
+          "date": "2021-02-28T14:21:12.722Z",
+          "category": 11,
+          "amount": 20000
+        },
+        {
+          "title": "Аванс",
+          "date": "2021-03-28T14:21:12.722Z",
+          "category": 11,
+          "amount": 1000
+        }
+      ]
+    }
   ]
 }

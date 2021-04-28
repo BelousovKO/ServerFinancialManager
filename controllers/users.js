@@ -53,24 +53,6 @@ const checkMail = (req, res, next) => {
   });
 };
 
-/* const getPasEmail = (req, res, next) => {
-  const { email } = req.params;
-
-  const user = db
-    .get('users')
-    .find({ email })
-    .value();
-
-  if (!user) {
-    throw new Error('USER_NOT_FOUND');
-  }
-
-  res.json({
-    status: 'OK',
-    data: user
-  });
-}; */
-
 const userReg = (req, res, next) => {
   const userSchema = {
     type: 'object',
@@ -139,6 +121,11 @@ const logInUser = (req, res, next) => {
     .find({ userName })
     .value();
 
+  const userData = db
+    .get('userData')
+    .find({ userId: user.id })
+    .value();
+
   if (!user) {
     return res.json({ status: 'ERROR' });
   }
@@ -148,7 +135,8 @@ const logInUser = (req, res, next) => {
 
     return res.json({
       status: 'OK',
-      token
+      token,
+      userData
     });
   }
   return res.json({ status: 'FALSE' });
@@ -178,13 +166,19 @@ const authUser = (req, res, next) => {
     .find({ userName })
     .value();
 
+  const userData = db
+    .get('userData')
+    .find({ userId: user.id })
+    .value();
+
   if (!user || checkToken !== req.ip) {
     return res.json({ status: 'ERROR' });
   }
   if (user.userName === userName && hashPassword === user.hashPassword) {
     return res.json({
       status: 'OK',
-      data: user.userName
+      data: user.userName,
+      userData
     });
   }
   return res.json({ status: 'FALSE' });
@@ -256,8 +250,7 @@ const sendMail = (req, res, next) => {
 
 module.exports = {
   checkUserName,
-  checkMail, /*
-  getPasEmail, */
+  checkMail,
   userReg,
   sendMail,
   logInUser,
