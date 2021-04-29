@@ -23,163 +23,199 @@
     {
       "userId": "1_WtaVqQn",
       "interface": {
-        "expenseCategory0": {
-          "title": "Продукты",
-          "color": "#ce4b99",
-          "icon": ""
-        },
-        "expenseCategory1": {
-          "title": "Кафе",
-          "color": "#b1c94e",
-          "icon": ""
-        },
-        "expenseCategory2": {
-          "title": "Досуг",
-          "color": "#563227",
-          "icon": ""
-        },
-        "expenseCategory3": {
-          "title": "Транспорт",
-          "color": "#cf7e1a",
-          "icon": ""
-        },
-        "expenseCategory4": {
-          "title": "Здоровье",
-          "color": "#601480",
-          "icon": ""
-        },
-        "expenseCategory5": {
-          "title": "Подарки",
-          "color": "#377bbc",
-          "icon": ""
-        },
-        "expenseCategory6": {
-          "title": "Семья",
-          "color": "#A50606",
-          "icon": ""
-        },
-        "expenseCategory7": {
-          "title": "Покупки",
-          "color": "#138539",
-          "icon": ""
-        },
-        "expenseCategory8": {
-          "title": "",
-          "color": "#00B7C6",
-          "icon": ""
-        },
-        "expenseCategory9": {
-          "title": "",
-          "color": "#EA09B9",
-          "icon": ""
-        },
-        "expenseCategory10": {
-          "title": "",
-          "color": "#d0db00",
-          "icon": ""
-        },
-        "expenseCategory11": {
-          "title": "",
-          "color": "#09EA9B",
-          "icon": ""
-        },
-        "incomeCategory0": {
-          "title": "Зарплата",
-          "color": "#ce4b99",
-          "icon": ""
-        },
-        "incomeCategory1": {
-          "title": "Вклады",
-          "color": "#b1c94e",
-          "icon": ""
-        },
-        "incomeCategory2": {
-          "title": "",
-          "color": "#563227",
-          "icon": ""
-        },
-        "incomeCategory3": {
-          "title": "",
-          "color": "#cf7e1a",
-          "icon": ""
-        },
-        "incomeCategory4": {
-          "title": "",
-          "color": "#601480",
-          "icon": ""
-        },
-        "incomeCategory5": {
-          "title": "",
-          "color": "#377bbc",
-          "icon": ""
+        "expense": [
+          {
+            "title": "Продукты",
+            "color": "#ce4b99",
+            "icon": ""
+          },
+          {
+            "title": "Кафе",
+            "color": "#b1c94e",
+            "icon": ""
+          },
+          {
+            "title": "Досуг",
+            "color": "#563227",
+            "icon": ""
+          },
+          {
+            "title": "Транспорт",
+            "color": "#cf7e1a",
+            "icon": ""
+          },
+          {
+            "title": "Здоровье",
+            "color": "#601480",
+            "icon": ""
+          },
+          {
+            "title": "Подарки",
+            "color": "#377bbc",
+            "icon": ""
+          },
+          {
+            "title": "Семья",
+            "color": "#A50606",
+            "icon": ""
+          },
+          {
+            "title": "Покупки",
+            "color": "#138539",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#00B7C6",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#EA09B9",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#d0db00",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#09EA9B",
+            "icon": ""
+          }
+        ],
+        "income": {
+          "category0": {
+            "title": "Зарплата",
+            "color": "#ce4b99",
+            "icon": ""
+          },
+          "category1": {
+            "title": "Вклады",
+            "color": "#b1c94e",
+            "icon": ""
+          },
+          "category2": {
+            "title": "",
+            "color": "#563227",
+            "icon": ""
+          },
+          "category3": {
+            "title": "",
+            "color": "#cf7e1a",
+            "icon": ""
+          },
+          "category4": {
+            "title": "",
+            "color": "#601480",
+            "icon": ""
+          },
+          "category5": {
+            "title": "",
+            "color": "#377bbc",
+            "icon": ""
+          }
         }
       },
       "costs": [
         {
+          "id": "Yn05HeIcR",
           "title": "Хлеб",
           "date": "2021-04-28T14:10:12.722Z",
           "category": 0,
-          "amount": 1
+          "amount": 111
         },
         {
+          "id": "YnksF3lcE",
           "title": "Молоко",
           "date": "2021-04-28T14:11:12.722Z",
           "category": 1,
           "amount": 2
         },
         {
+          "id": "YnNKPqcR",
           "title": "Чай",
           "date": "2021-04-28T14:12:12.722Z",
           "category": 2,
           "amount": 1
         },
         {
+          "id": "YnCvrLIcR",
           "title": "Кофе",
           "date": "2021-04-28T14:13:12.722Z",
           "category": 3,
           "amount": 2
         },
         {
+          "id": "VPRsFLIcR",
           "title": "Сахар",
           "date": "2021-04-28T14:14:12.722Z",
           "category": 4,
           "amount": 1
         },
         {
+          "id": "YnksFQPcR",
           "title": "Сметана",
           "date": "2021-04-28T14:15:12.722Z",
           "category": 5,
           "amount": 2
         },
         {
+          "id": "YnkNpLIcR",
           "title": "Мука",
           "date": "2021-04-28T14:16:12.722Z",
           "category": 6,
           "amount": 1
         },
         {
+          "id": "YWfsFLIcR",
           "title": "Творог",
           "date": "2021-04-28T14:17:12.722Z",
           "category": 7,
           "amount": 2
         },
         {
+          "id": "YnksFLklR",
           "title": "Джем",
           "date": "2021-04-28T14:18:12.722Z",
           "category": 8,
           "amount": 1
         },
         {
-          "title": "Шоколад",
+          "id": "YnksF2345R",
+          "title": "Джем2",
           "date": "2021-04-28T14:19:12.722Z",
+          "category": 8,
+          "amount": 10
+        },
+        {
+          "id": "YnksFLIcR",
+          "title": "Шоколад",
+          "date": "2021-04-28T14:20:12.722Z",
           "category": 9,
           "amount": 2
         },
         {
+          "id": "Ynk999666jR",
+          "title": "Шоколад2",
+          "date": "2021-04-28T14:21:12.722Z",
+          "category": 9,
+          "amount": 20
+        },
+        {
+          "id": "Yn3344IcR",
           "title": "",
-          "date": "2021-04-28T14:20:12.722Z",
+          "date": "2021-04-28T14:22:12.722Z",
           "category": 10,
           "amount": 1
+        },
+        {
+          "id": "Yn3344IcR",
+          "title": "",
+          "date": "2021-04-28T14:23:12.722Z",
+          "category": 10,
+          "amount": 15
         }
       ],
       "income": [
