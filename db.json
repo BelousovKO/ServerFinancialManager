@@ -174,62 +174,6 @@
           "date": "2021-04-28T14:17:12.722Z",
           "category": 7,
           "amount": 2
-        },
-        {
-          "id": "YnksFLklR",
-          "title": "Джем",
-          "date": "2021-04-28T14:18:12.722Z",
-          "category": 8,
-          "amount": 1
-        },
-        {
-          "id": "YnksF2345R",
-          "title": "Джем2",
-          "date": "2021-04-28T14:19:12.722Z",
-          "category": 8,
-          "amount": 10
-        },
-        {
-          "id": "YnksFLIcR",
-          "title": "Шоколад",
-          "date": "2021-04-28T14:20:12.722Z",
-          "category": 9,
-          "amount": 2
-        },
-        {
-          "id": "Ynk999666jR",
-          "title": "Шоколад2",
-          "date": "2021-04-28T14:21:12.722Z",
-          "category": 9,
-          "amount": 20
-        },
-        {
-          "id": "Yn3344IcR",
-          "title": "",
-          "date": "2021-04-28T14:22:12.722Z",
-          "category": 10,
-          "amount": 1
-        },
-        {
-          "id": "Yn3344IcR",
-          "title": "",
-          "date": "2021-04-28T14:23:12.722Z",
-          "category": 10,
-          "amount": 15
-        }
-      ],
-      "income": [
-        {
-          "title": "ЗП",
-          "date": "2021-02-28T14:21:12.722Z",
-          "category": 11,
-          "amount": 20000
-        },
-        {
-          "title": "Аванс",
-          "date": "2021-03-28T14:21:12.722Z",
-          "category": 11,
-          "amount": 1000
         }
       ]
     }
