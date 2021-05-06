@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const usersRoutes = require('./routes/users');
+const interfaceRoutes = require('./routes/interface');
 
 app.use(bodyParser.json()); // application/json
 
@@ -15,6 +16,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/users', usersRoutes);
+app.use('/interface', interfaceRoutes);
 
 // Error handling
 app.use((err, req, res, next) => {
