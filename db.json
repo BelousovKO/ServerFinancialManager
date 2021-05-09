@@ -27,62 +27,62 @@
           {
             "title": "Продукты",
             "color": "#ce4b99",
-            "icon": ""
+            "icon": "add_shopping_cart"
           },
           {
-            "title": "Кафе",
+            "title": "Квартплата",
             "color": "#b1c94e",
-            "icon": ""
+            "icon": "apartment"
           },
           {
             "title": "Досуг",
             "color": "#563227",
-            "icon": ""
+            "icon": "outdoor_grill"
           },
           {
             "title": "Транспорт",
             "color": "#cf7e1a",
-            "icon": ""
+            "icon": "drive_eta"
           },
           {
             "title": "Здоровье",
             "color": "#601480",
-            "icon": ""
+            "icon": "local_hospital"
           },
           {
             "title": "Подарки",
             "color": "#377bbc",
-            "icon": ""
+            "icon": "cake"
           },
           {
             "title": "Семья",
             "color": "#A50606",
-            "icon": ""
+            "icon": "family_restroom"
           },
           {
             "title": "Покупки",
             "color": "#138539",
-            "icon": ""
+            "icon": "local_grocery_store"
           },
           {
             "title": "",
             "color": "#00B7C6",
-            "icon": ""
+            "icon": "beach_access"
           },
           {
             "title": "",
             "color": "#EA09B9",
-            "icon": ""
+            "icon": "ac_unit"
           },
           {
             "title": "",
             "color": "#d0db00",
-            "icon": ""
+            "icon": "fitness_center"
           },
           {
             "title": "",
             "color": "#09EA9B",
-            "icon": ""
+            "icon": "hiking"
           }
         ],
         "income": {
