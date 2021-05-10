@@ -17,6 +17,12 @@
       "userName": "aaaa",
       "hashPassword": "$2a$07$2smyrKql058jE2RtiafDGeSLnOTSkRmvA4GgfY3K5rCStUzarSJsy",
       "email": "a@a.a"
+    },
+    {
+      "id": "EUvbn6F2R",
+      "userName": "bbbb",
+      "hashPassword": "$2a$07$T8gcpRpDSaCWKza/TLYsHeZ6x9S1MN9iszNKO2Hyv.8JknwJQUroK",
+      "email": "b@b"
     }
   ],
   "userData": [
@@ -174,8 +180,365 @@
           "date": "2021-04-28T14:17:12.722Z",
           "category": 7,
           "amount": 2
+        },
+        {
+          "id": "1_WtaVqQn",
+          "title": "",
+          "date": "2021-05-10T12:37:04.176Z",
+          "category": 0,
+          "amount": 1
+        },
+        {
+          "id": "1_WtaVqQn",
+          "title": "",
+          "date": "2021-05-10T12:43:51.870Z",
+          "category": 0,
+          "amount": 2
+        },
+        {
+          "id": "1_WtaVqQn",
+          "title": "",
+          "date": "2021-05-10T12:44:10.234Z",
+          "category": 0,
+          "amount": 1
+        },
+        {
+          "id": "1_WtaVqQn",
+          "title": "",
+          "date": "2021-05-10T12:45:44.065Z",
+          "category": 1,
+          "amount": 1
+        },
+        {
+          "id": "1_WtaVqQn",
+          "title": "",
+          "date": "2021-05-10T12:46:26.105Z",
+          "category": 0,
+          "amount": 1
+        },
+        {
+          "id": "1_WtaVqQn",
+          "title": "",
+          "date": "2021-05-10T12:56:37.405Z",
+          "category": 2,
+          "amount": 1
+        },
+        {
+          "id": "1_WtaVqQn",
+          "title": "",
+          "date": "2021-05-10T12:56:48.615Z",
+          "category": 3,
+          "amount": 2
         }
       ]
+    },
+    {
+      "userId": "EUvbn6F2R",
+      "interface": {
+        "expense": [
+          {
+            "title": "Продукты",
+            "color": "#ce4b99",
+            "icon": "add_shopping_cart"
+          },
+          {
+            "title": "Квартплата",
+            "color": "#b1c94e",
+            "icon": "apartment"
+          },
+          {
+            "title": "Досуг",
+            "color": "#563227",
+            "icon": "outdoor_grill"
+          },
+          {
+            "title": "Транспорт",
+            "color": "#cf7e1a",
+            "icon": "drive_eta"
+          },
+          {
+            "title": "Здоровье",
+            "color": "#601480",
+            "icon": "local_hospital"
+          },
+          {
+            "title": "Подарки",
+            "color": "#377bbc",
+            "icon": "cake"
+          },
+          {
+            "title": "Семья",
+            "color": "#A50606",
+            "icon": "family_restroom"
+          },
+          {
+            "title": "Покупки",
+            "color": "#138539",
+            "icon": "local_grocery_store"
+          },
+          {
+            "title": "",
+            "color": "#00B7C6",
+            "icon": "beach_access"
+          },
+          {
+            "title": "",
+            "color": "#EA09B9",
+            "icon": "ac_unit"
+          },
+          {
+            "title": "",
+            "color": "#d0db00",
+            "icon": "fitness_center"
+          },
+          {
+            "title": "",
+            "color": "#09EA9B",
+            "icon": "hiking"
+          }
+        ],
+        "income": [
+          {
+            "title": "Зарплата",
+            "color": "#ce4b99",
+            "icon": ""
+          },
+          {
+            "title": "Вклады",
+            "color": "#b1c94e",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#563227",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#cf7e1a",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#601480",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#377bbc",
+            "icon": ""
+          }
+        ]
+      },
+      "costs": [
+        {
+          "id": "EUvbn6F2R",
+          "title": "",
+          "date": "2021-05-10T13:15:29.251Z",
+          "category": 0,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "userId": "QOn7V5hR5",
+      "interface": {
+        "expense": [
+          {
+            "title": "Продукты",
+            "color": "#ce4b99",
+            "icon": "add_shopping_cart"
+          },
+          {
+            "title": "Квартплата",
+            "color": "#b1c94e",
+            "icon": "apartment"
+          },
+          {
+            "title": "Досуг",
+            "color": "#563227",
+            "icon": "outdoor_grill"
+          },
+          {
+            "title": "Транспорт",
+            "color": "#cf7e1a",
+            "icon": "drive_eta"
+          },
+          {
+            "title": "Здоровье",
+            "color": "#601480",
+            "icon": "local_hospital"
+          },
+          {
+            "title": "Подарки",
+            "color": "#377bbc",
+            "icon": "cake"
+          },
+          {
+            "title": "Семья",
+            "color": "#A50606",
+            "icon": "family_restroom"
+          },
+          {
+            "title": "Покупки",
+            "color": "#138539",
+            "icon": "local_grocery_store"
+          },
+          {
+            "title": "",
+            "color": "#00B7C6",
+            "icon": "beach_access"
+          },
+          {
+            "title": "",
+            "color": "#EA09B9",
+            "icon": "ac_unit"
+          },
+          {
+            "title": "",
+            "color": "#d0db00",
+            "icon": "fitness_center"
+          },
+          {
+            "title": "",
+            "color": "#09EA9B",
+            "icon": "hiking"
+          }
+        ],
+        "income": [
+          {
+            "title": "Зарплата",
+            "color": "#ce4b99",
+            "icon": ""
+          },
+          {
+            "title": "Вклады",
+            "color": "#b1c94e",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#563227",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#cf7e1a",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#601480",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#377bbc",
+            "icon": ""
+          }
+        ]
+      },
+      "costs": []
+    },
+    {
+      "userId": "YnkOFLIcR",
+      "interface": {
+        "expense": [
+          {
+            "title": "Продукты",
+            "color": "#ce4b99",
+            "icon": "add_shopping_cart"
+          },
+          {
+            "title": "Квартплата",
+            "color": "#b1c94e",
+            "icon": "apartment"
+          },
+          {
+            "title": "Досуг",
+            "color": "#563227",
+            "icon": "outdoor_grill"
+          },
+          {
+            "title": "Транспорт",
+            "color": "#cf7e1a",
+            "icon": "drive_eta"
+          },
+          {
+            "title": "Здоровье",
+            "color": "#601480",
+            "icon": "local_hospital"
+          },
+          {
+            "title": "Подарки",
+            "color": "#377bbc",
+            "icon": "cake"
+          },
+          {
+            "title": "Семья",
+            "color": "#A50606",
+            "icon": "family_restroom"
+          },
+          {
+            "title": "Покупки",
+            "color": "#138539",
+            "icon": "local_grocery_store"
+          },
+          {
+            "title": "",
+            "color": "#00B7C6",
+            "icon": "beach_access"
+          },
+          {
+            "title": "",
+            "color": "#EA09B9",
+            "icon": "ac_unit"
+          },
+          {
+            "title": "",
+            "color": "#d0db00",
+            "icon": "fitness_center"
+          },
+          {
+            "title": "",
+            "color": "#09EA9B",
+            "icon": "hiking"
+          }
+        ],
+        "income": [
+          {
+            "title": "Зарплата",
+            "color": "#ce4b99",
+            "icon": ""
+          },
+          {
+            "title": "Вклады",
+            "color": "#b1c94e",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#563227",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#cf7e1a",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#601480",
+            "icon": ""
+          },
+          {
+            "title": "",
+            "color": "#377bbc",
+            "icon": ""
+          }
+        ]
+      },
+      "costs": []
     }
   ]
 }

@@ -70,6 +70,107 @@ const userReg = (req, res, next) => {
     throw new Error('INVALID_JSON_OR_API_FORMAT');
   }
 
+  const userData = {
+    userId: '',
+    interface: {
+      expense: [
+        {
+          title: 'Продукты',
+          color: '#ce4b99',
+          icon: 'add_shopping_cart'
+        },
+        {
+          title: 'Квартплата',
+          color: '#b1c94e',
+          icon: 'apartment'
+        },
+        {
+          title: 'Досуг',
+          color: '#563227',
+          icon: 'outdoor_grill'
+        },
+        {
+          title: 'Транспорт',
+          color: '#cf7e1a',
+          icon: 'drive_eta'
+        },
+        {
+          title: 'Здоровье',
+          color: '#601480',
+          icon: 'local_hospital'
+        },
+        {
+          title: 'Подарки',
+          color: '#377bbc',
+          icon: 'cake'
+        },
+        {
+          title: 'Семья',
+          color: '#A50606',
+          icon: 'family_restroom'
+        },
+        {
+          title: 'Покупки',
+          color: '#138539',
+          icon: 'local_grocery_store'
+        },
+        {
+          title: '',
+          color: '#00B7C6',
+          icon: 'beach_access'
+        },
+        {
+          title: '',
+          color: '#EA09B9',
+          icon: 'ac_unit'
+        },
+        {
+          title: '',
+          color: '#d0db00',
+          icon: 'fitness_center'
+        },
+        {
+          title: '',
+          color: '#09EA9B',
+          icon: 'hiking'
+        }
+      ],
+      income: [
+        {
+          title: 'Зарплата',
+          color: '#ce4b99',
+          icon: ''
+        },
+        {
+          title: 'Вклады',
+          color: '#b1c94e',
+          icon: ''
+        },
+        {
+          title: '',
+          color: '#563227',
+          icon: ''
+        },
+        {
+          title: '',
+          color: '#cf7e1a',
+          icon: ''
+        },
+        {
+          title: '',
+          color: '#601480',
+          icon: ''
+        },
+        {
+          title: '',
+          color: '#377bbc',
+          icon: ''
+        }
+      ]
+    },
+    costs: []
+  };
+
   const { userName, password, email } = req.body;
   const tempEmail = email.toLowerCase();
   const hashPassword = bcrypt.hashSync(password.toLowerCase(), 7);
@@ -81,11 +182,17 @@ const userReg = (req, res, next) => {
     email: tempEmail
   };
 
+  userData.userId = user.id;
+
   const token = generateAccessToken(user.userName, user.hashPassword, checkToken);
 
   try {
     db.get('users')
       .push(user)
+      .write();
+
+    db.get('userData')
+      .push(userData)
       .write();
   } catch (error) {
     throw new Error(error);
