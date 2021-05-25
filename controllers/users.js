@@ -138,37 +138,38 @@ const userReg = (req, res, next) => {
       income: [
         {
           title: 'Зарплата',
-          color: '#ce4b99',
-          icon: ''
-        },
-        {
-          title: 'Вклады',
-          color: '#b1c94e',
-          icon: ''
+          color: '#186234',
+          icon: 'account_balance_wallet'
         },
         {
           title: '',
-          color: '#563227',
-          icon: ''
+          color: '#6cd440',
+          icon: 'paid'
         },
         {
           title: '',
-          color: '#cf7e1a',
-          icon: ''
+          color: '#187c5c',
+          icon: 'credit_card'
         },
         {
           title: '',
-          color: '#601480',
-          icon: ''
+          color: '#155322',
+          icon: 'account_balance'
         },
         {
           title: '',
-          color: '#377bbc',
-          icon: ''
+          color: '#32837e',
+          icon: 'savings'
+        },
+        {
+          title: '',
+          color: '#09ba0d',
+          icon: 'card_giftcard'
         }
       ]
     },
-    costs: []
+    costs: [],
+    income: []
   };
 
   const { userName, password, email } = req.body;

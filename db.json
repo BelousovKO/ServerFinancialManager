@@ -91,38 +91,38 @@
             "icon": "pets"
           }
         ],
-        "income": {
-          "category0": {
+        "income": [
+          {
             "title": "Зарплата",
             "color": "#ce4b99",
-            "icon": ""
+            "icon": "account_balance_wallet"
           },
-          "category1": {
-            "title": "Вклады",
+          {
+            "title": "",
             "color": "#b1c94e",
-            "icon": ""
+            "icon": "paid"
           },
-          "category2": {
+          {
             "title": "",
             "color": "#563227",
-            "icon": ""
+            "icon": "credit_card"
           },
-          "category3": {
+          {
             "title": "",
             "color": "#cf7e1a",
-            "icon": ""
+            "icon": "account_balance"
           },
-          "category4": {
+          {
             "title": "",
             "color": "#601480",
-            "icon": ""
+            "icon": "savings"
           },
-          "category5": {
+          {
             "title": "",
             "color": "#377bbc",
-            "icon": ""
+            "icon": "card_giftcard"
           }
-        }
+        ]
       },
       "costs": [
         {
@@ -182,202 +182,245 @@
           "amount": 2
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaV3Qn",
           "title": "",
           "date": "2021-05-10T12:37:04.176Z",
           "category": 0,
           "amount": 1
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaV4Qn",
           "title": "",
           "date": "2021-05-10T12:43:51.870Z",
           "category": 0,
           "amount": 2
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaV5Qn",
           "title": "",
           "date": "2021-05-10T12:44:10.234Z",
           "category": 0,
           "amount": 1
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaV6Qn",
           "title": "",
           "date": "2021-05-10T12:45:44.065Z",
           "category": 1,
           "amount": 1
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaV7Qn",
           "title": "",
           "date": "2021-05-10T12:46:26.105Z",
           "category": 0,
           "amount": 1
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaV8Qn",
           "title": "",
           "date": "2021-05-10T12:56:37.405Z",
           "category": 2,
           "amount": 1
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaV9Qn",
           "title": "",
           "date": "2021-05-10T12:56:48.615Z",
           "category": 3,
           "amount": 2
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaV0Qn",
           "title": "",
           "date": "2021-03-11T13:28:31.247Z",
           "category": 7,
           "amount": 1
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVq1n",
           "title": "",
           "date": "2021-04-11T13:28:31.247Z",
           "category": 6,
           "amount": 2
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVq2n",
           "title": "",
           "date": "2021-05-12T14:06:40.988Z",
           "category": 5,
           "amount": 2
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVq3n",
           "title": "",
           "date": "2020-02-13T12:56:50.628Z",
           "category": 6,
           "amount": 4
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVq4n",
           "title": "",
           "date": "2021-05-13T13:09:49.650Z",
           "category": 2,
           "amount": 5
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVq5n",
           "title": "",
           "date": "2021-05-14T13:32:57.417Z",
           "category": 4,
           "amount": 5
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVq6n",
           "title": "",
           "date": "2021-05-15T04:37:16.015Z",
           "category": 7,
           "amount": 1
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVq7n",
           "title": "",
           "date": "2021-05-16T10:00:22.963Z",
           "category": 1,
           "amount": 5
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVq8n",
           "title": "",
           "date": "2021-04-30T16:59:59.999Z",
           "category": 2,
           "amount": 7
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVq9n",
           "title": "",
           "date": "2020-12-31T16:59:59.998Z",
           "category": 1,
           "amount": 7
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVq0n",
           "title": "",
           "date": "2019-12-31T16:59:59.999Z",
           "category": 6,
           "amount": 1
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVqQ1",
           "title": "",
           "date": "2021-05-31T17:00:00.000Z",
           "category": 2,
           "amount": 1
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVqQ2",
           "title": "",
           "date": "2021-05-31T17:00:00.000Z",
           "category": 3,
           "amount": 2
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVqQ3",
           "title": "",
           "date": "2021-06-01:12:00:00",
           "category": 5,
           "amount": 1
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVqQ4",
           "title": "",
           "date": "2021-05-17:12:00:00",
           "category": 1,
           "amount": 5
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVqQ5",
           "title": "",
           "date": "2021-05-22:17:42:49",
           "category": 6,
           "amount": 5
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVqQ6",
           "title": "",
           "date": "2021-05-23:20:51:03",
           "category": 8,
           "amount": 5
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVqQ7",
           "title": "",
           "date": "2021-05-21:23:59:59",
           "category": 6,
           "amount": 5
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVqQ8",
           "title": "",
           "date": "2021-05-24:00:00:00",
           "category": 7,
           "amount": 5
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVqQ9",
           "title": "",
           "date": "2021-05-16:23:59:59",
           "category": 7,
           "amount": 5
         },
         {
-          "id": "1_WtaVqQn",
+          "id": "1_WtaVqQ0",
           "title": "",
           "date": "2021-05-23:23:52:31",
           "category": 0,
           "amount": 5
+        },
+        {
+          "id": "YCWX60tHR",
+          "title": "",
+          "date": "2021-05-25:20:03:53",
+          "category": 2,
+          "amount": 10
+        },
+        {
+          "id": "iEzDs65un",
+          "title": "",
+          "date": "2021-05-25:20:14:51",
+          "category": 4,
+          "amount": 1
+        },
+        {
+          "id": "ClFJwysi8",
+          "title": "",
+          "date": "2021-05-25:22:31:27",
+          "category": 1,
+          "amount": 1
+        },
+        {
+          "id": "isBAH1U8i",
+          "title": "",
+          "date": "2021-05-25:22:49:23",
+          "category": 3,
+          "amount": 1
+        },
+        {
+          "id": "Pq6PjgnF9",
+          "title": "",
+          "date": "2021-05-25:23:15:33",
+          "category": 0,
+          "amount": 1
+        },
+        {
+          "id": "VZ71Dm7m5",
+          "title": "",
+          "date": "2021-02-28:23:59:59",
+          "category": 0,
+          "amount": 1
         }
-      ]
+      ],
+      "income": []
     },
     {
       "userId": "EUvbn6F2R",
@@ -499,7 +542,8 @@
           "category": 2,
           "amount": 3
         }
-      ]
+      ],
+      "income": []
     },
     {
       "userId": "QOn7V5hR5",
@@ -599,7 +643,8 @@
           }
         ]
       },
-      "costs": []
+      "costs": [],
+      "income": []
     },
     {
       "userId": "YnkOFLIcR",
@@ -699,7 +744,8 @@
           }
         ]
       },
-      "costs": []
+      "costs": [],
+      "income": []
     }
   ]
 }

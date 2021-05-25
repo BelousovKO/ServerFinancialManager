@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const { validate } = require('jsonschema');
+const shortid = require('shortid');
 
 const db = require('../db/db');
 
@@ -30,7 +31,7 @@ const create = (req, res, next) => {
   } = req.body;
 
   const cost = {
-    id: userId,
+    id: shortid.generate(),
     title,
     date,
     category,
