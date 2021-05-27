@@ -138,32 +138,32 @@ const userReg = (req, res, next) => {
       income: [
         {
           title: 'Зарплата',
-          color: '#186234',
+          color: '#155331',
           icon: 'account_balance_wallet'
         },
         {
           title: '',
-          color: '#6cd440',
+          color: '#b1c94e',
           icon: 'paid'
         },
         {
           title: '',
-          color: '#187c5c',
+          color: '#257d7e',
           icon: 'credit_card'
         },
         {
           title: '',
-          color: '#155322',
+          color: '#05a335',
           icon: 'account_balance'
         },
         {
           title: '',
-          color: '#32837e',
+          color: '#34d5ba',
           icon: 'savings'
         },
         {
           title: '',
-          color: '#09ba0d',
+          color: '#3ea22a',
           icon: 'card_giftcard'
         }
       ]

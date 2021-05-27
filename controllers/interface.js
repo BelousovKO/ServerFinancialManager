@@ -10,10 +10,10 @@ const change = (req, res, next) => {
     type: 'object',
     properties: {
       userId: { type: 'string' },
-      expense: { type: 'arr' },
+      interface: { type: 'obj' },
       token: { type: 'string' }
     },
-    required: ['userId', 'expense', 'token'],
+    required: ['userId', 'interface', 'token'],
     additionalProperties: false
   };
 
@@ -22,7 +22,8 @@ const change = (req, res, next) => {
     throw new Error('INVALID_JSON_OR_API_FORMAT');
   }
 
-  const { userId, expense, token } = req.body;
+  const { userId, token } = req.body;
+  const dataInterface = req.body.interface;
   const payload = jwt.verify(token, secret);
 
   if (payload.checkToken === req.ip) {
@@ -31,7 +32,7 @@ const change = (req, res, next) => {
         .get('userData')
         .find({ userId })
         .value();
-      userData.interface.expense = expense;
+      userData.interface = dataInterface;
 
       db
         .get('userData')

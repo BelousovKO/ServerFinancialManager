@@ -94,32 +94,32 @@
         "income": [
           {
             "title": "Зарплата",
-            "color": "#ce4b99",
+            "color": "#155331",
             "icon": "account_balance_wallet"
           },
           {
-            "title": "",
+            "title": "зп",
             "color": "#b1c94e",
             "icon": "paid"
           },
           {
             "title": "",
-            "color": "#563227",
+            "color": "#257d7e",
             "icon": "credit_card"
           },
           {
             "title": "",
-            "color": "#cf7e1a",
+            "color": "#05a335",
             "icon": "account_balance"
           },
           {
             "title": "",
-            "color": "#601480",
+            "color": "#34d5ba",
             "icon": "savings"
           },
           {
             "title": "",
-            "color": "#377bbc",
+            "color": "#3ea22a",
             "icon": "card_giftcard"
           }
         ]
@@ -418,9 +418,136 @@
           "date": "2021-02-28:23:59:59",
           "category": 0,
           "amount": 1
+        },
+        {
+          "id": "6YVNduqTq",
+          "title": "",
+          "date": "2021-05-26:19:26:25",
+          "category": 3,
+          "amount": 10
+        },
+        {
+          "id": "gHVM0diQt",
+          "title": "",
+          "date": "2021-05-26:19:29:21",
+          "category": 5,
+          "amount": 1
+        },
+        {
+          "id": "E5pI4pU9N",
+          "title": "",
+          "date": "2021-05-26:19:40:58",
+          "category": 5,
+          "amount": 1
+        },
+        {
+          "id": "QyRNHkYM4",
+          "title": "",
+          "date": "2021-05-27:23:01:54",
+          "category": 8,
+          "amount": 1
+        },
+        {
+          "id": "eB2UjJGFG",
+          "title": "",
+          "date": "2021-05-27:23:20:14",
+          "category": 5,
+          "amount": 1
+        },
+        {
+          "id": "YTCjqSFEz",
+          "title": "",
+          "date": "2021-05-27:23:25:56",
+          "category": 5,
+          "amount": 2
+        },
+        {
+          "id": "uoxdUcimu",
+          "title": "",
+          "date": "2021-05-27:23:26:41",
+          "category": 5,
+          "amount": 3
+        },
+        {
+          "id": "PMIbeSxyr",
+          "title": "",
+          "date": "2021-05-27:23:27:47",
+          "category": 5,
+          "amount": 1
+        },
+        {
+          "id": "G8_z5mXz4",
+          "title": "",
+          "date": "2021-05-27:23:32:21",
+          "category": 5,
+          "amount": 1
+        },
+        {
+          "id": "GQ62P2JZi",
+          "title": "",
+          "date": "2021-05-27:23:32:58",
+          "category": 0,
+          "amount": 1
+        },
+        {
+          "id": "kDOEiXd05",
+          "title": "",
+          "date": "2021-05-27:23:35:52",
+          "category": 8,
+          "amount": 1
+        },
+        {
+          "id": "jleVSTG7m",
+          "title": "",
+          "date": "2021-05-27:23:36:20",
+          "category": 8,
+          "amount": 2
         }
       ],
-      "income": []
+      "income": [
+        {
+          "id": "E53I4pU9N",
+          "title": "",
+          "date": "2021-05-26:19:40:58",
+          "category": 0,
+          "amount": 1
+        },
+        {
+          "id": "053I4pU9N",
+          "title": "",
+          "date": "2021-05-26:19:40:58",
+          "category": 1,
+          "amount": 10
+        },
+        {
+          "id": "hsxnHhMlA",
+          "title": "",
+          "date": "2021-05-27:23:02:30",
+          "category": 0,
+          "amount": 1
+        },
+        {
+          "id": "NExUpeef8",
+          "title": "",
+          "date": "2021-05-27:23:20:31",
+          "category": 0,
+          "amount": 1
+        },
+        {
+          "id": "jABaN2OCJ",
+          "title": "",
+          "date": "2021-05-27:23:32:29",
+          "category": 0,
+          "amount": 2
+        },
+        {
+          "id": "CIuAIrhYv",
+          "title": "",
+          "date": "2021-05-27:23:33:04",
+          "category": 1,
+          "amount": 1
+        }
+      ]
     },
     {
       "userId": "EUvbn6F2R",

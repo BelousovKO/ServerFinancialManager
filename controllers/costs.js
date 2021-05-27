@@ -11,13 +11,14 @@ const create = (req, res, next) => {
     type: 'object',
     properties: {
       userId: { type: 'string' },
+      typeTransaction: { type: 'string' },
       title: { type: 'string' },
       date: { type: 'string' },
       category: { type: 'number' },
       amount: { type: 'number' },
       token: { type: 'string' }
     },
-    required: ['userId', 'title', 'date', 'category', 'amount', 'token'],
+    required: ['userId', 'typeTransaction', 'title', 'date', 'category', 'amount', 'token'],
     additionalProperties: true
   };
 
@@ -27,10 +28,10 @@ const create = (req, res, next) => {
   }
 
   const {
-    userId, title, date, category, amount, token
+    userId, typeTransaction, title, date, category, amount, token
   } = req.body;
 
-  const cost = {
+  const transaction = {
     id: shortid.generate(),
     title,
     date,
@@ -47,7 +48,11 @@ const create = (req, res, next) => {
 
   if (payload.checkToken === req.ip) {
     try {
-      userData.costs.push(cost);
+      if (typeTransaction === 'cost') {
+        userData.costs.push(transaction);
+      } else {
+        userData.income.push(transaction);
+      }
 
       db
         .get('userData')
@@ -58,7 +63,7 @@ const create = (req, res, next) => {
 
     res.json({
       status: 'OK',
-      data: userData.costs
+      data: transaction
     });
   }
 };
