@@ -68,6 +68,75 @@ const create = (req, res, next) => {
   }
 };
 
+const edit = (req, res, next) => {
+  const userSchema = {
+    type: 'object',
+    properties: {
+      userId: { type: 'string' },
+      id: { type: 'string' },
+      typeTransaction: { type: 'string' },
+      title: { type: 'string' },
+      date: { type: 'string' },
+      category: { type: 'number' },
+      amount: { type: 'number' },
+      token: { type: 'string' }
+    },
+    required: ['userId', 'id', 'typeTransaction', 'title', 'date', 'category', 'amount', 'token'],
+    additionalProperties: true
+  };
+
+  const validationResult = validate(req.body, userSchema);
+  if (!validationResult.valid) {
+    throw new Error('INVALID_JSON_OR_API_FORMAT');
+  }
+
+  const {
+    userId, id, typeTransaction, title, date, category, amount, token
+  } = req.body;
+
+  const transaction = {
+    id,
+    title,
+    date,
+    category,
+    amount
+  };
+
+  const payload = jwt.verify(token, secret);
+
+  const userData = db
+    .get('userData')
+    .find({ userId })
+    .value();
+
+  if (payload.checkToken === req.ip) {
+    try {
+      if (typeTransaction === 'cost') {
+        console.log('cost');
+        const editTransaction = userData.costs.filter();
+        console.log('editTransaction: ', editTransaction);
+      } else {
+        console.log('income');
+        const editTransaction = userData.income.find({ id })
+          .value();
+        console.log('editTransaction: ', editTransaction);
+      }
+
+      db
+        .get('userData')
+        .write();
+    } catch (error) {
+      throw new Error(error);
+    }
+
+    res.json({
+      status: 'OK',
+      data: transaction
+    });
+  }
+};
+
 module.exports = {
-  create
+  create,
+  edit
 };

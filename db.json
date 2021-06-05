@@ -313,6 +313,146 @@
           "date": "2021-05-28:21:35:36",
           "category": 4,
           "amount": 14
+        },
+        {
+          "id": "3jGUxNbwj",
+          "title": "",
+          "date": "2021-06-01:19:12:28",
+          "category": 7,
+          "amount": 2
+        },
+        {
+          "id": "E2LstsW1c",
+          "title": "",
+          "date": "2021-06-01:19:12:31",
+          "category": 6,
+          "amount": 3
+        },
+        {
+          "id": "js3BMHs13",
+          "title": "",
+          "date": "2021-06-02:00:00:00",
+          "category": 8,
+          "amount": 1
+        },
+        {
+          "id": "cZ83ORnD-",
+          "title": "",
+          "date": "2021-05-07:23:59:59",
+          "category": 4,
+          "amount": 10
+        },
+        {
+          "id": "MDKDTegjB",
+          "title": "",
+          "date": "2021-06-03:21:02:11",
+          "category": 0,
+          "amount": 1
+        },
+        {
+          "id": "Vaf0pYsLK",
+          "title": "",
+          "date": "2021-06-03:21:02:14",
+          "category": 1,
+          "amount": 2
+        },
+        {
+          "id": "exdj99shq",
+          "title": "",
+          "date": "2021-06-03:21:02:15",
+          "category": 2,
+          "amount": 3
+        },
+        {
+          "id": "gmZsjlxHZ",
+          "title": "",
+          "date": "2021-06-03:21:02:18",
+          "category": 3,
+          "amount": 4
+        },
+        {
+          "id": "WsMxDQ_Jy",
+          "title": "",
+          "date": "2021-06-03:21:02:20",
+          "category": 4,
+          "amount": 5
+        },
+        {
+          "id": "-QxyImzjf",
+          "title": "",
+          "date": "2021-06-03:21:02:23",
+          "category": 5,
+          "amount": 6
+        },
+        {
+          "id": "lhoZ8rRaf",
+          "title": "",
+          "date": "2021-06-03:21:02:25",
+          "category": 6,
+          "amount": 7
+        },
+        {
+          "id": "i6Qg-wPWc",
+          "title": "",
+          "date": "2021-06-03:21:02:28",
+          "category": 7,
+          "amount": 8
+        },
+        {
+          "id": "aNA5uUXny",
+          "title": "",
+          "date": "2021-06-03:21:02:31",
+          "category": 8,
+          "amount": 9
+        },
+        {
+          "id": "VeEYOknLb",
+          "title": "молоко",
+          "date": "2021-06-03:21:10:47",
+          "category": 0,
+          "amount": 10
+        },
+        {
+          "id": "INo1TfRre",
+          "title": "",
+          "date": "2021-06-04:19:42:56",
+          "category": 2,
+          "amount": 1
+        },
+        {
+          "id": "9a0MxL9JH",
+          "title": "",
+          "date": "2021-06-04:20:03:10",
+          "category": 1,
+          "amount": 1
+        },
+        {
+          "id": "Izjq0xpKB",
+          "title": "",
+          "date": "2021-05-31:23:59:59",
+          "category": 8,
+          "amount": 1
+        },
+        {
+          "id": "1jUit3dXS",
+          "title": "",
+          "date": "2021-06-05:14:50:08",
+          "category": 1,
+          "amount": 1
+        },
+        {
+          "id": "R9MIG6Mh9",
+          "title": "",
+          "date": "2021-06-05:14:51:45",
+          "category": 1,
+          "amount": 2
+        },
+        {
+          "id": "ZngPZw8We",
+          "title": "",
+          "date": "2021-06-05:15:17:04",
+          "category": 2,
+          "amount": 1
         }
       ],
       "income": [
@@ -371,6 +511,20 @@
           "date": "2021-05-28:22:01:31",
           "category": 1,
           "amount": 3
+        },
+        {
+          "id": "uM5qQ1fbV",
+          "title": "",
+          "date": "2021-06-01:19:19:46",
+          "category": 0,
+          "amount": 100
+        },
+        {
+          "id": "m3YUWJCjD",
+          "title": "",
+          "date": "2021-06-04:19:42:59",
+          "category": 0,
+          "amount": 1
         }
       ]
     },
