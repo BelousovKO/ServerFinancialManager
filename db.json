@@ -1,28 +1,10 @@
 {
   "users": [
     {
-      "id": "YnkOFLIcR",
-      "userName": "admin",
-      "hashPassword": "$2a$07$1eBeJvsB81ZFoTNVOnxftOjTqCzVOGFRSOW.rU2rE3FKr/MBvlMlS",
-      "email": "city-directory@mail.ru"
-    },
-    {
-      "id": "QOn7V5hR5",
-      "userName": "Kostya",
-      "hashPassword": "$2a$07$fJ7g8CUnVXw.mFEDnMXL/uoK/whz/WPDDq1wMu.Z5INNfOALd4iM6",
-      "email": "raider0540@gmail.com"
-    },
-    {
       "id": "1_WtaVqQn",
       "userName": "aaaa",
       "hashPassword": "$2a$07$2smyrKql058jE2RtiafDGeSLnOTSkRmvA4GgfY3K5rCStUzarSJsy",
       "email": "a@a.a"
-    },
-    {
-      "id": "EUvbn6F2R",
-      "userName": "bbbb",
-      "hashPassword": "$2a$07$T8gcpRpDSaCWKza/TLYsHeZ6x9S1MN9iszNKO2Hyv.8JknwJQUroK",
-      "email": "b@b"
     }
   ],
   "userData": [
@@ -124,734 +106,168 @@
           }
         ]
       },
-      "costs": [
+      "transactions": [
         {
-          "id": "1_WtaVqQ3",
+          "id": "9a0MxL9JH",
+          "type": "cost",
           "title": "",
-          "date": "2021-06-01:12:00:00",
-          "category": 5,
-          "amount": 1
-        },
-        {
-          "id": "1_WtaVqQ4",
-          "title": "",
-          "date": "2021-05-17:12:00:00",
+          "date": "2021-06-04",
           "category": 1,
-          "amount": 5
-        },
-        {
-          "id": "1_WtaVqQ5",
-          "title": "",
-          "date": "2021-05-22:17:42:49",
-          "category": 6,
-          "amount": 5
-        },
-        {
-          "id": "1_WtaVqQ6",
-          "title": "",
-          "date": "2021-05-23:20:51:03",
-          "category": 8,
-          "amount": 5
-        },
-        {
-          "id": "1_WtaVqQ7",
-          "title": "",
-          "date": "2021-05-21:23:59:59",
-          "category": 6,
-          "amount": 5
-        },
-        {
-          "id": "1_WtaVqQ8",
-          "title": "",
-          "date": "2021-05-24:00:00:00",
-          "category": 7,
-          "amount": 5
-        },
-        {
-          "id": "1_WtaVqQ9",
-          "title": "",
-          "date": "2021-05-16:23:59:59",
-          "category": 7,
-          "amount": 5
-        },
-        {
-          "id": "1_WtaVqQ0",
-          "title": "",
-          "date": "2021-05-23:23:52:31",
-          "category": 0,
-          "amount": 5
-        },
-        {
-          "id": "YCWX60tHR",
-          "title": "",
-          "date": "2021-05-25:20:03:53",
-          "category": 2,
-          "amount": 10
-        },
-        {
-          "id": "iEzDs65un",
-          "title": "",
-          "date": "2021-05-25:20:14:51",
-          "category": 4,
-          "amount": 1
-        },
-        {
-          "id": "ClFJwysi8",
-          "title": "",
-          "date": "2021-05-25:22:31:27",
-          "category": 1,
-          "amount": 1
-        },
-        {
-          "id": "isBAH1U8i",
-          "title": "",
-          "date": "2021-05-25:22:49:23",
-          "category": 3,
-          "amount": 1
-        },
-        {
-          "id": "Pq6PjgnF9",
-          "title": "",
-          "date": "2021-05-25:23:15:33",
-          "category": 0,
-          "amount": 1
-        },
-        {
-          "id": "VZ71Dm7m5",
-          "title": "",
-          "date": "2021-02-28:23:59:59",
-          "category": 0,
-          "amount": 1
-        },
-        {
-          "id": "6YVNduqTq",
-          "title": "",
-          "date": "2021-05-26:19:26:25",
-          "category": 3,
-          "amount": 10
-        },
-        {
-          "id": "gHVM0diQt",
-          "title": "",
-          "date": "2021-05-26:19:29:21",
-          "category": 5,
-          "amount": 1
-        },
-        {
-          "id": "E5pI4pU9N",
-          "title": "",
-          "date": "2021-05-26:19:40:58",
-          "category": 5,
-          "amount": 1
-        },
-        {
-          "id": "QyRNHkYM4",
-          "title": "",
-          "date": "2021-05-27:23:01:54",
-          "category": 8,
-          "amount": 1
-        },
-        {
-          "id": "eB2UjJGFG",
-          "title": "",
-          "date": "2021-05-27:23:20:14",
-          "category": 5,
-          "amount": 1
-        },
-        {
-          "id": "YTCjqSFEz",
-          "title": "",
-          "date": "2021-05-27:23:25:56",
-          "category": 5,
-          "amount": 2
-        },
-        {
-          "id": "uoxdUcimu",
-          "title": "",
-          "date": "2021-05-27:23:26:41",
-          "category": 5,
-          "amount": 3
-        },
-        {
-          "id": "PMIbeSxyr",
-          "title": "",
-          "date": "2021-05-27:23:27:47",
-          "category": 5,
-          "amount": 1
-        },
-        {
-          "id": "G8_z5mXz4",
-          "title": "",
-          "date": "2021-05-27:23:32:21",
-          "category": 5,
-          "amount": 1
-        },
-        {
-          "id": "GQ62P2JZi",
-          "title": "",
-          "date": "2021-05-27:23:32:58",
-          "category": 0,
-          "amount": 1
-        },
-        {
-          "id": "kDOEiXd05",
-          "title": "",
-          "date": "2021-05-27:23:35:52",
-          "category": 8,
-          "amount": 1
-        },
-        {
-          "id": "jleVSTG7m",
-          "title": "",
-          "date": "2021-05-27:23:36:20",
-          "category": 8,
-          "amount": 2
-        },
-        {
-          "id": "4oZkDh62K",
-          "title": "",
-          "date": "2021-05-28:21:35:36",
-          "category": 4,
-          "amount": 14
-        },
-        {
-          "id": "3jGUxNbwj",
-          "title": "",
-          "date": "2021-06-01:19:12:28",
-          "category": 7,
-          "amount": 2
-        },
-        {
-          "id": "E2LstsW1c",
-          "title": "",
-          "date": "2021-06-01:19:12:31",
-          "category": 6,
-          "amount": 3
-        },
-        {
-          "id": "js3BMHs13",
-          "title": "",
-          "date": "2021-06-02:00:00:00",
-          "category": 8,
-          "amount": 1
-        },
-        {
-          "id": "cZ83ORnD-",
-          "title": "",
-          "date": "2021-05-07:23:59:59",
-          "category": 4,
-          "amount": 10
-        },
-        {
-          "id": "MDKDTegjB",
-          "title": "",
-          "date": "2021-06-03:21:02:11",
-          "category": 0,
-          "amount": 1
-        },
-        {
-          "id": "Vaf0pYsLK",
-          "title": "",
-          "date": "2021-06-03:21:02:14",
-          "category": 1,
-          "amount": 2
-        },
-        {
-          "id": "exdj99shq",
-          "title": "",
-          "date": "2021-06-03:21:02:15",
-          "category": 2,
-          "amount": 3
-        },
-        {
-          "id": "gmZsjlxHZ",
-          "title": "",
-          "date": "2021-06-03:21:02:18",
-          "category": 3,
-          "amount": 4
-        },
-        {
-          "id": "WsMxDQ_Jy",
-          "title": "",
-          "date": "2021-06-03:21:02:20",
-          "category": 4,
-          "amount": 5
-        },
-        {
-          "id": "-QxyImzjf",
-          "title": "",
-          "date": "2021-06-03:21:02:23",
-          "category": 5,
-          "amount": 6
-        },
-        {
-          "id": "lhoZ8rRaf",
-          "title": "",
-          "date": "2021-06-03:21:02:25",
-          "category": 6,
-          "amount": 7
-        },
-        {
-          "id": "i6Qg-wPWc",
-          "title": "",
-          "date": "2021-06-03:21:02:28",
-          "category": 7,
-          "amount": 8
-        },
-        {
-          "id": "aNA5uUXny",
-          "title": "",
-          "date": "2021-06-03:21:02:31",
-          "category": 8,
-          "amount": 9
-        },
-        {
-          "id": "VeEYOknLb",
-          "title": "молоко",
-          "date": "2021-06-03:21:10:47",
-          "category": 0,
-          "amount": 10
-        },
-        {
-          "id": "INo1TfRre",
-          "title": "",
-          "date": "2021-06-04:19:42:56",
-          "category": 2,
           "amount": 1
         },
         {
           "id": "9a0MxL9JH",
+          "type": "cost",
           "title": "",
-          "date": "2021-06-04:20:03:10",
-          "category": 1,
-          "amount": 1
+          "date": "2021-06-04",
+          "category": 4,
+          "amount": 4
         },
         {
           "id": "Izjq0xpKB",
+          "type": "cost",
           "title": "",
-          "date": "2021-05-31:23:59:59",
+          "date": "2021-05-31",
           "category": 8,
           "amount": 1
         },
         {
           "id": "1jUit3dXS",
+          "type": "cost",
           "title": "",
-          "date": "2021-06-05:14:50:08",
+          "date": "2021-06-05",
           "category": 1,
           "amount": 1
         },
         {
           "id": "R9MIG6Mh9",
+          "type": "cost",
           "title": "",
-          "date": "2021-06-05:14:51:45",
+          "date": "2021-06-05",
           "category": 1,
           "amount": 2
         },
         {
-          "id": "ZngPZw8We",
+          "id": "R9MI76Mh9",
+          "type": "cost",
           "title": "",
-          "date": "2021-06-05:15:17:04",
-          "category": 2,
-          "amount": 1
-        }
-      ],
-      "income": [
+          "date": "2021-06-05",
+          "category": 1,
+          "amount": 2
+        },
         {
           "id": "E53I4pU9N",
+          "type": "income",
           "title": "",
-          "date": "2021-05-26:19:40:58",
+          "date": "2021-05-26",
           "category": 0,
           "amount": 1
         },
         {
           "id": "053I4pU9N",
+          "type": "income",
           "title": "",
-          "date": "2021-05-26:19:40:58",
+          "date": "2021-05-26",
           "category": 1,
           "amount": 10
         },
         {
           "id": "hsxnHhMlA",
+          "type": "income",
           "title": "",
-          "date": "2021-05-27:23:02:30",
+          "date": "2021-05-27",
           "category": 0,
           "amount": 1
         },
         {
           "id": "NExUpeef8",
+          "type": "income",
           "title": "",
-          "date": "2021-05-27:23:20:31",
+          "date": "2021-05-27",
           "category": 0,
           "amount": 1
         },
         {
           "id": "jABaN2OCJ",
+          "type": "income",
           "title": "",
-          "date": "2021-05-27:23:32:29",
+          "date": "2021-05-27",
           "category": 0,
           "amount": 2
         },
         {
-          "id": "CIuAIrhYv",
+          "id": "NEx7peef8",
+          "type": "income",
           "title": "",
-          "date": "2021-05-27:23:33:04",
+          "date": "2021-06-26",
+          "category": 0,
+          "amount": 8
+        },
+        {
+          "id": "jABa82OCJ",
+          "type": "income",
+          "title": "",
+          "date": "2021-06-27",
+          "category": 0,
+          "amount": 2
+        },
+        {
+          "id": "xLKsqRmNi",
+          "type": "cost",
+          "title": "",
+          "date": "2021-06-09",
+          "category": 0,
+          "amount": 5
+        },
+        {
+          "id": "7DlgY5OY6",
+          "type": "income",
+          "title": "",
+          "date": "2021-06-01",
           "category": 1,
+          "amount": 10
+        },
+        {
+          "id": "polaBc8Y7",
+          "type": "cost",
+          "title": "",
+          "date": "2021-06-01",
+          "category": 2,
           "amount": 1
         },
         {
-          "id": "9lysVpLsq",
+          "id": "ZaGzg9e7L",
+          "type": "cost",
           "title": "",
-          "date": "2021-05-28:21:09:59",
-          "category": 0,
-          "amount": 100
-        },
-        {
-          "id": "9QZthWaHi",
-          "title": "",
-          "date": "2021-05-28:22:01:31",
-          "category": 1,
-          "amount": 3
-        },
-        {
-          "id": "uM5qQ1fbV",
-          "title": "",
-          "date": "2021-06-01:19:19:46",
-          "category": 0,
-          "amount": 100
-        },
-        {
-          "id": "m3YUWJCjD",
-          "title": "",
-          "date": "2021-06-04:19:42:59",
-          "category": 0,
+          "date": "2021-06-01",
+          "category": 3,
           "amount": 1
+        },
+        {
+          "id": "7G5g_ZAG0",
+          "type": "cost",
+          "title": "",
+          "date": "2021-06-01",
+          "category": 5,
+          "amount": 1
+        },
+        {
+          "id": "sUq0N6TH_",
+          "type": "cost",
+          "title": "",
+          "date": "2021-06-01",
+          "category": 7,
+          "amount": 1
+        },
+        {
+          "id": "GCZkEug7y",
+          "type": "income",
+          "title": "",
+          "date": "2021-06-01",
+          "category": 0,
+          "amount": 5
         }
       ]
-    },
-    {
-      "userId": "EUvbn6F2R",
-      "interface": {
-        "expense": [
-          {
-            "title": "Продукты",
-            "color": "#ce4b99",
-            "icon": "add_shopping_cart"
-          },
-          {
-            "title": "Квартплата",
-            "color": "#b1c94e",
-            "icon": "apartment"
-          },
-          {
-            "title": "Досуг",
-            "color": "#563227",
-            "icon": "outdoor_grill"
-          },
-          {
-            "title": "Транспорт",
-            "color": "#cf7e1a",
-            "icon": "drive_eta"
-          },
-          {
-            "title": "Здоровье",
-            "color": "#601480",
-            "icon": "local_hospital"
-          },
-          {
-            "title": "Подарки",
-            "color": "#377bbc",
-            "icon": "cake"
-          },
-          {
-            "title": "Семья",
-            "color": "#A50606",
-            "icon": "family_restroom"
-          },
-          {
-            "title": "Покупки",
-            "color": "#138539",
-            "icon": "local_grocery_store"
-          },
-          {
-            "title": "",
-            "color": "#00B7C6",
-            "icon": "beach_access"
-          },
-          {
-            "title": "",
-            "color": "#EA09B9",
-            "icon": "ac_unit"
-          },
-          {
-            "title": "",
-            "color": "#d0db00",
-            "icon": "fitness_center"
-          },
-          {
-            "title": "",
-            "color": "#09EA9B",
-            "icon": "hiking"
-          }
-        ],
-        "income": [
-          {
-            "title": "Зарплата",
-            "color": "#ce4b99",
-            "icon": ""
-          },
-          {
-            "title": "Вклады",
-            "color": "#b1c94e",
-            "icon": ""
-          },
-          {
-            "title": "",
-            "color": "#563227",
-            "icon": ""
-          },
-          {
-            "title": "",
-            "color": "#cf7e1a",
-            "icon": ""
-          },
-          {
-            "title": "",
-            "color": "#601480",
-            "icon": ""
-          },
-          {
-            "title": "",
-            "color": "#377bbc",
-            "icon": ""
-          }
-        ]
-      },
-      "costs": [
-        {
-          "id": "EUvbn6F2R",
-          "title": "",
-          "date": "2021-05-18:19:45:36",
-          "category": 1,
-          "amount": 2
-        },
-        {
-          "id": "EUvbn6F2R",
-          "title": "",
-          "date": "2021-05-16:23:59:59",
-          "category": 0,
-          "amount": 1
-        },
-        {
-          "id": "EUvbn6F2R",
-          "title": "",
-          "date": "2021-05-24:00:00:00",
-          "category": 2,
-          "amount": 3
-        }
-      ],
-      "income": []
-    },
-    {
-      "userId": "QOn7V5hR5",
-      "interface": {
-        "expense": [
-          {
-            "title": "Продукты",
-            "color": "#ce4b99",
-            "icon": "add_shopping_cart"
-          },
-          {
-            "title": "Квартплата",
-            "color": "#b1c94e",
-            "icon": "apartment"
-          },
-          {
-            "title": "Досуг",
-            "color": "#563227",
-            "icon": "outdoor_grill"
-          },
-          {
-            "title": "Транспорт",
-            "color": "#cf7e1a",
-            "icon": "drive_eta"
-          },
-          {
-            "title": "Здоровье",
-            "color": "#601480",
-            "icon": "local_hospital"
-          },
-          {
-            "title": "Подарки",
-            "color": "#377bbc",
-            "icon": "cake"
-          },
-          {
-            "title": "Семья",
-            "color": "#A50606",
-            "icon": "family_restroom"
-          },
-          {
-            "title": "Покупки",
-            "color": "#138539",
-            "icon": "local_grocery_store"
-          },
-          {
-            "title": "",
-            "color": "#00B7C6",
-            "icon": "beach_access"
-          },
-          {
-            "title": "",
-            "color": "#EA09B9",
-            "icon": "ac_unit"
-          },
-          {
-            "title": "",
-            "color": "#d0db00",
-            "icon": "fitness_center"
-          },
-          {
-            "title": "",
-            "color": "#09EA9B",
-            "icon": "hiking"
-          }
-        ],
-        "income": [
-          {
-            "title": "Зарплата",
-            "color": "#ce4b99",
-            "icon": ""
-          },
-          {
-            "title": "Вклады",
-            "color": "#b1c94e",
-            "icon": ""
-          },
-          {
-            "title": "",
-            "color": "#563227",
-            "icon": ""
-          },
-          {
-            "title": "",
-            "color": "#cf7e1a",
-            "icon": ""
-          },
-          {
-            "title": "",
-            "color": "#601480",
-            "icon": ""
-          },
-          {
-            "title": "",
-            "color": "#377bbc",
-            "icon": ""
-          }
-        ]
-      },
-      "costs": [],
-      "income": []
-    },
-    {
-      "userId": "YnkOFLIcR",
-      "interface": {
-        "expense": [
-          {
-            "title": "Продукты",
-            "color": "#ce4b99",
-            "icon": "add_shopping_cart"
-          },
-          {
-            "title": "Квартплата",
-            "color": "#b1c94e",
-            "icon": "apartment"
-          },
-          {
-            "title": "Досуг",
-            "color": "#563227",
-            "icon": "outdoor_grill"
-          },
-          {
-            "title": "Транспорт",
-            "color": "#cf7e1a",
-            "icon": "drive_eta"
-          },
-          {
-            "title": "Здоровье",
-            "color": "#601480",
-            "icon": "local_hospital"
-          },
-          {
-            "title": "Подарки",
-            "color": "#377bbc",
-            "icon": "cake"
-          },
-          {
-            "title": "Семья",
-            "color": "#A50606",
-            "icon": "family_restroom"
-          },
-          {
-            "title": "Покупки",
-            "color": "#138539",
-            "icon": "local_grocery_store"
-          },
-          {
-            "title": "",
-            "color": "#00B7C6",
-            "icon": "beach_access"
-          },
-          {
-            "title": "",
-            "color": "#EA09B9",
-            "icon": "ac_unit"
-          },
-          {
-            "title": "",
-            "color": "#d0db00",
-            "icon": "fitness_center"
-          },
-          {
-            "title": "",
-            "color": "#09EA9B",
-            "icon": "hiking"
-          }
-        ],
-        "income": [
-          {
-            "title": "Зарплата",
-            "color": "#ce4b99",
-            "icon": ""
-          },
-          {
-            "title": "Вклады",
-            "color": "#b1c94e",
-            "icon": ""
-          },
-          {
-            "title": "",
-            "color": "#563227",
-            "icon": ""
-          },
-          {
-            "title": "",
-            "color": "#cf7e1a",
-            "icon": ""
-          },
-          {
-            "title": "",
-            "color": "#601480",
-            "icon": ""
-          },
-          {
-            "title": "",
-            "color": "#377bbc",
-            "icon": ""
-          }
-        ]
-      },
-      "costs": [],
-      "income": []
     }
   ]
 }

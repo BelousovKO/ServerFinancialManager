@@ -168,8 +168,7 @@ const userReg = (req, res, next) => {
         }
       ]
     },
-    costs: [],
-    income: []
+    transactions: []
   };
 
   const { userName, password, email } = req.body;

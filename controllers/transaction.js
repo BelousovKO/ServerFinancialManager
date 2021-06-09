@@ -24,8 +24,11 @@ const create = (req, res, next) => {
 
   const validationResult = validate(req.body, userSchema);
   if (!validationResult.valid) {
+    console.log('INVALID_JSON_OR_API_FORMAT');
     throw new Error('INVALID_JSON_OR_API_FORMAT');
   }
+
+  console.log(req.body);
 
   const {
     userId, typeTransaction, title, date, category, amount, token
@@ -33,6 +36,7 @@ const create = (req, res, next) => {
 
   const transaction = {
     id: shortid.generate(),
+    type: typeTransaction,
     title,
     date,
     category,
@@ -48,11 +52,7 @@ const create = (req, res, next) => {
 
   if (payload.checkToken === req.ip) {
     try {
-      if (typeTransaction === 'cost') {
-        userData.costs.push(transaction);
-      } else {
-        userData.income.push(transaction);
-      }
+      userData.transactions.push(transaction);
 
       db
         .get('userData')
@@ -96,6 +96,7 @@ const edit = (req, res, next) => {
 
   const transaction = {
     id,
+    type: typeTransaction,
     title,
     date,
     category,
@@ -104,23 +105,15 @@ const edit = (req, res, next) => {
 
   const payload = jwt.verify(token, secret);
 
-  const userData = db
-    .get('userData')
-    .find({ userId })
-    .value();
-
   if (payload.checkToken === req.ip) {
+    const userData = db
+      .get('userData')
+      .find({ userId })
+      .value();
+
     try {
-      if (typeTransaction === 'cost') {
-        console.log('cost');
-        const editTransaction = userData.costs.filter();
-        console.log('editTransaction: ', editTransaction);
-      } else {
-        console.log('income');
-        const editTransaction = userData.income.find({ id })
-          .value();
-        console.log('editTransaction: ', editTransaction);
-      }
+      userData.transactions = userData.transactions.filter((e) => e.id !== id);
+      userData.transactions.push(transaction);
 
       db
         .get('userData')
