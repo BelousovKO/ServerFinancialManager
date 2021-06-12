@@ -24,11 +24,8 @@ const create = (req, res, next) => {
 
   const validationResult = validate(req.body, userSchema);
   if (!validationResult.valid) {
-    console.log('INVALID_JSON_OR_API_FORMAT');
     throw new Error('INVALID_JSON_OR_API_FORMAT');
   }
-
-  console.log(req.body);
 
   const {
     userId, typeTransaction, title, date, category, amount, token

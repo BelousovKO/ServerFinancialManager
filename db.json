@@ -24,7 +24,7 @@
           },
           {
             "title": "Досуг",
-            "color": "#0b2d93",
+            "color": "#563227",
             "icon": "outdoor_grill"
           },
           {
@@ -53,24 +53,24 @@
             "icon": "local_grocery_store"
           },
           {
-            "title": "Кредит",
-            "color": "#9308ba",
-            "icon": "account_balance"
+            "title": "Отпуск",
+            "color": "#00c7b0",
+            "icon": "flight_takeoff"
+          },
+          {
+            "title": "Ремонт",
+            "color": "#874078",
+            "icon": "construction"
           },
           {
             "title": "",
-            "color": "#5b0b0b",
-            "icon": "build"
+            "color": "#d0db00",
+            "icon": "fitness_center"
           },
           {
             "title": "",
-            "color": "#8f7676",
-            "icon": "theaters"
-          },
-          {
-            "title": "",
-            "color": "#8f7676",
-            "icon": "pets"
+            "color": "#09EA9B",
+            "icon": "hiking"
           }
         ],
         "income": [
@@ -80,12 +80,12 @@
             "icon": "account_balance_wallet"
           },
           {
-            "title": "зп",
+            "title": "Аванс",
             "color": "#b1c94e",
             "icon": "paid"
           },
           {
-            "title": "",
+            "title": "Подарки",
             "color": "#257d7e",
             "icon": "credit_card"
           },
@@ -266,6 +266,46 @@
           "date": "2021-06-01",
           "category": 0,
           "amount": 5
+        },
+        {
+          "id": "LAZCpWkEF",
+          "type": "cost",
+          "title": "Кефир",
+          "date": "2021-06-01",
+          "category": 4,
+          "amount": 10
+        },
+        {
+          "id": "6FocdUzpo",
+          "type": "income",
+          "title": "",
+          "date": "2021-06-01",
+          "category": 1,
+          "amount": 10
+        },
+        {
+          "id": "KwhVJwLTg",
+          "type": "income",
+          "title": "test",
+          "date": "2021-06-09",
+          "category": 0,
+          "amount": 10
+        },
+        {
+          "id": "FQAPkBrnt",
+          "type": "cost",
+          "title": "",
+          "date": "2021-06-24",
+          "category": 2,
+          "amount": 6
+        },
+        {
+          "id": "roLas934v",
+          "type": "cost",
+          "title": "",
+          "date": "2020-12-31",
+          "category": 0,
+          "amount": 1
         }
       ]
     }

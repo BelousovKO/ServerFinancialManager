@@ -10,10 +10,11 @@ const change = (req, res, next) => {
     type: 'object',
     properties: {
       userId: { type: 'string' },
+      typeInterface: { type: 'string' },
       interface: { type: 'obj' },
       token: { type: 'string' }
     },
-    required: ['userId', 'interface', 'token'],
+    required: ['userId', 'interface', 'typeInterface', 'token'],
     additionalProperties: false
   };
 
@@ -25,6 +26,7 @@ const change = (req, res, next) => {
   const { userId, token } = req.body;
   const dataInterface = req.body.interface;
   const payload = jwt.verify(token, secret);
+  const { typeInterface } = req.body;
 
   if (payload.checkToken === req.ip) {
     try {
@@ -32,7 +34,13 @@ const change = (req, res, next) => {
         .get('userData')
         .find({ userId })
         .value();
-      userData.interface = dataInterface;
+
+      if (typeInterface === 'income') {
+        userData.interface.income = dataInterface;
+      }
+      if (typeInterface === 'cost') {
+        userData.interface.expense = dataInterface;
+      }
 
       db
         .get('userData')
@@ -47,15 +55,6 @@ const change = (req, res, next) => {
   }
 };
 
-const test = (req, res, next) => {
-  const { userId } = req.params;
-  console.log(userId);
-  res.json({
-    status: 'OK'
-  });
-};
-
 module.exports = {
-  change,
-  test
+  change
 };
